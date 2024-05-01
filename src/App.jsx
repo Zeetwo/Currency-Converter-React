@@ -3,7 +3,11 @@ import { useState } from 'react'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [amount, setAmount] = useState(0)
+  const [from, setFrom] =useState('usd')
+  const [to, setTo] =useState('inr')
+  const [convertedAmount, setCovertedAmount] =useState(0)
+
 
   return (
    <div className='w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat' style={{backgroundImage: `url(https://images.pexels.com/photos/325154/pexels-photo-325154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)`} }>
